@@ -1,0 +1,19 @@
+{
+  "name": "weinrebh",
+  "version": "1.0.0",
+  "description": "remote server of weinre npm module to be able to use cross domain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "weinre --boundHost -all-"
+  },
+  "keywords": [
+    "remote",
+    "debug"
+  ],
+  "author": "joelsz",
+  "license": "ISC",
+  "dependencies": {
+    "weinre": "^2.0.0-pre-I0Z7U9OV"
+  }
+}
