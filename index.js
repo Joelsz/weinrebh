@@ -3,7 +3,7 @@ var spawn = require('child_process').spawn;
 
 var commandStart = (process.platform === "win32" ? 'weinre.cmd' : 'weinre');
 
-var child = spawn(commandStart, ['--boundHost', '-all-', '--httpPort', process.env.PORT || '8080']);
+var child = spawn(commandStart, ['--boundHost', process.env.HOST || 'localhost', '--httpPort', process.env.PORT || '8080']);
 
 child.stdout.on('data', function (data) {
   console.log('stdout:', data.toString());
